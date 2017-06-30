@@ -1,0 +1,145 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:2:1-60:12
+	package
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:5:5-83
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:6:5-58:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/vitaly/.android/build-cache/ea55e4c0fc2a6198d851aff21fd0c6e630c09caf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vitaly/.android/build-cache/76967ed9c240d856a569cdc477c6286374817538/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vitaly/.android/build-cache/cde444526b56592f040b4c19a360286fe64438f1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vitaly/.android/build-cache/da5b791a9bd597b819f34cee7d8e4ff322dbb39f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vitaly/.android/build-cache/e34a88516de5d7153565e439d24e7715da0c4cd2/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vitaly/.android/build-cache/595577b3dac781f3b0186d65ea6b17f91e4a9d22/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vitaly/.android/build-cache/f3505c323386b94c7bf573d12ebe4d525376a7b0/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/vitaly/.android/build-cache/29114f64592e92430d02d88f1fc9dea3d6f1daf6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vitaly/.android/build-cache/7d3de9e8d3f38d1a2516258e04b6c3399de66c14/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:9:9-41
+	android:supportsRtl
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:11:9-35
+	android:roundIcon
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:10:9-54
+	android:allowBackup
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:7:9-35
+	android:icon
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:8:9-43
+	android:theme
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:12:9-40
+activity#com.example.vitaly.fintech.MainActivity
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:13:9-21:20
+	android:theme
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:15:13-63
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:14:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:19:27-74
+activity#com.example.vitaly.fintech.GetMessageActivity
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:22:9-29:20
+	android:theme
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:24:13-63
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:23:13-47
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:26:13-28:49
+	android:value
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:28:17-46
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:27:17-63
+activity#com.example.vitaly.fintech.SendNameActivity
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:30:9-37:20
+	android:theme
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:31:13-45
+activity#com.example.vitaly.fintech.SearchableActivity
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:38:9-44:20
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:38:19-53
+intent-filter#android.intent.action.SEARCH
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:39:13-41:29
+action#android.intent.action.SEARCH
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:40:17-71
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:40:25-68
+meta-data#android.app.searchable
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:42:13-43:53
+	android:resource
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:43:17-51
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:42:24-61
+activity#com.example.vitaly.fintech.FindChatActivity
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:46:9-50:20
+	android:theme
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:47:13-63
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:46:19-51
+meta-data#android.app.default_searchable
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:48:13-49:55
+	android:value
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:49:17-52
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:48:24-69
+activity#com.example.vitaly.fintech.ChatActivity
+ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:51:9-57:20
+	android:theme
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:53:13-63
+	android:name
+		ADDED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml:52:13-41
+uses-sdk
+INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /home/vitaly/.android/build-cache/ea55e4c0fc2a6198d851aff21fd0c6e630c09caf/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vitaly/.android/build-cache/76967ed9c240d856a569cdc477c6286374817538/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vitaly/.android/build-cache/cde444526b56592f040b4c19a360286fe64438f1/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vitaly/.android/build-cache/da5b791a9bd597b819f34cee7d8e4ff322dbb39f/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vitaly/.android/build-cache/e34a88516de5d7153565e439d24e7715da0c4cd2/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vitaly/.android/build-cache/595577b3dac781f3b0186d65ea6b17f91e4a9d22/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vitaly/.android/build-cache/f3505c323386b94c7bf573d12ebe4d525376a7b0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /home/vitaly/.android/build-cache/29114f64592e92430d02d88f1fc9dea3d6f1daf6/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vitaly/.android/build-cache/7d3de9e8d3f38d1a2516258e04b6c3399de66c14/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vitaly/StudioProjects/Fintech/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/vitaly/.android/build-cache/ea55e4c0fc2a6198d851aff21fd0c6e630c09caf/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vitaly/.android/build-cache/76967ed9c240d856a569cdc477c6286374817538/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vitaly/.android/build-cache/cde444526b56592f040b4c19a360286fe64438f1/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vitaly/.android/build-cache/da5b791a9bd597b819f34cee7d8e4ff322dbb39f/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vitaly/.android/build-cache/e34a88516de5d7153565e439d24e7715da0c4cd2/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vitaly/.android/build-cache/595577b3dac781f3b0186d65ea6b17f91e4a9d22/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vitaly/.android/build-cache/f3505c323386b94c7bf573d12ebe4d525376a7b0/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/vitaly/.android/build-cache/29114f64592e92430d02d88f1fc9dea3d6f1daf6/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/AndroidManifest.xml:26:9-47

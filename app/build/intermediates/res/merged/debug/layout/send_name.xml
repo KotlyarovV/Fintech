@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vitaly.fintech.SendNameActivity">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:text="Введите имя"/>
+
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:hint="Фамилия"
+            android:paddingTop="10dp"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:hint="Имя"
+            android:paddingTop="10dp"
+            android:maxLength="10" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Отправить"
+            android:onClick="sendName"
+            />
+
+        <TextView
+            android:id="@+id/reaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="130dp"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.android/build-cache/29114f64592e92430d02d88f1fc9dea3d6f1daf6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/classes_99d614018e353a7f3e9fca435dbbb305236fd038.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_68d78ca7bc2af97cc956a6c7db1270a86a310c7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.android/build-cache/76967ed9c240d856a569cdc477c6286374817538/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/classes_723e3d5e274a13ce3fc26351d93a6a221b4d938d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.android/build-cache/e34a88516de5d7153565e439d24e7715da0c4cd2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/classes_31aa2f5a1b719d618fb479628bf74edd8782ed9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_b9b8b6d3e03c6b12f444012b81160990485c2156.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/okio-1.11.0_3c9345299b9e3aa1c32f6f95b54b5d4721bedb07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.android/build-cache/fd7303fbb278dccbb21babea13dc9ebb3a2f80d3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/classes_ad85035235d8a62c9add470165b5d8f1c7d1bd49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.android/build-cache/ea55e4c0fc2a6198d851aff21fd0c6e630c09caf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/classes_7874bff9bc5ec5e0ddd3667048f6319fda4dbc3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/vitaly/.android/build-cache/7d3de9e8d3f38d1a2516258e04b6c3399de66c14/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/vitaly/StudioProjects/Fintech/app/build/intermediates/pre-dexed/debug/classes_5dcfef3c3a312e729a87966cbf659293d6280a9b.jar" />
+    </item>
+
+</items>

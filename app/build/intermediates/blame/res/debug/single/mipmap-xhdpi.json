@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/vitaly/StudioProjects/Fintech/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/home/vitaly/StudioProjects/Fintech/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/vitaly/StudioProjects/Fintech/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/vitaly/StudioProjects/Fintech/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]
