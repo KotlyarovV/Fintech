@@ -18,7 +18,7 @@ import java.net.HttpURLConnection;
 public class HttpConnectionTask extends AsyncTask<String, Void, String> {
 
     TypeRequest request;
-    private static String IP = "http://188.120.244.56";
+    public static String IP = "http://188.120.244.56";
 
     private static String authorizeURL = IP + "/qiwi/authorize";
     private static String getTokenURL = IP + "/qiwi/access_token";

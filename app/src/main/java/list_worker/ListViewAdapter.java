@@ -43,6 +43,7 @@ public class ListViewAdapter extends BaseAdapter {
 
     public class ViewHolder {
         TextView name;
+        TextView balance;
     }
 
     @Override
@@ -66,11 +67,13 @@ public class ListViewAdapter extends BaseAdapter {
             holder = new ViewHolder();
             view = inflater.inflate(R.layout.list_view_items, null);
             holder.name = (TextView) view.findViewById(R.id.name);
+            holder.balance = (TextView) view.findViewById(R.id.balance);
             view.setTag(holder);
         } else {
             holder = (ViewHolder) view.getTag();
         }
         holder.name.setText(peopleDatasList.get(position).getName());
+        holder.balance.setText(peopleDatasList.get(position).getMoney());
         return view;
     }
 
@@ -104,6 +107,27 @@ public class ListViewAdapter extends BaseAdapter {
             }
         }
 
+        notifyDataSetChanged();
+    }
+
+    public void update (String userInfo) {
+        try {
+            JSONObject object = new JSONObject(userInfo);
+            String name = object.getString("ReceiverName");
+            String money = object.getString("Money");
+            String phone = object.getString("Receiver");
+
+            for (int j = 1; j < name.length(); j++) {
+                if (Character.isUpperCase(name.charAt(j))) {
+                    name = name.substring(0,j) + " " + name.substring(j);
+                    break;
+                }
+            }
+            PeopleDatas peopleDatas = new PeopleDatas(name, money, phone);
+            if (peopleDatasList.contains(peopleDatas)) peopleDatasList.remove(peopleDatas);
+            peopleDatasList.add(0, peopleDatas);
+
+        }  catch (Throwable e) {}
         notifyDataSetChanged();
     }
 

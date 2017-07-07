@@ -45,40 +45,45 @@ public class GetMessageActivity extends AppCompatActivity {
     }
 
     public void sendCode(View view) throws Exception{
-        String number = ((EditText) findViewById(R.id.code)).getText().toString();
 
-        if (!isCode(number) ) {
-            ((TextView) findViewById(R.id.reaction)).setText("Введен неверный код");
-            return;
-        }
+        try {
+            String number = ((EditText) findViewById(R.id.code)).getText().toString();
 
-        AsyncTask httpConnectionTask = new HttpConnectionTask(TypeRequest.GetToken).execute(key, number);
-        String keyJson = httpConnectionTask.get().toString();
-
-        if (keyJson == null) {
-            ((TextView) findViewById(R.id.reaction)).setText("Введен неверный код");
-        } else {
-
-            JSONObject jsonObject = new JSONObject(keyJson);
-            String phone = jsonObject.get("phone").toString();
-            String accessToken = jsonObject.get("access_token").toString();
-            AsyncTask getName = new HttpConnectionTask(TypeRequest.GetName).execute(phone, accessToken);
-
-            String jsonNameString = getName.get().toString();
-            JSONObject jsonName = new JSONObject(jsonNameString);
-            String name = jsonName.get("name").toString();
-
-            if (name.equals("none")) {
-                Intent intent = new Intent(this, SendNameActivity.class);
-                intent.putExtra("json", keyJson);
-                startActivity(intent);
-            } else {
-                Intent intent = new Intent(this, FindChatActivity.class);
-                intent.putExtra("json", keyJson);
-                intent.putExtra("name", name);
-                startActivity(intent);
+            if (!isCode(number)) {
+                ((TextView) findViewById(R.id.reaction)).setText("Введен неверный код");
+                return;
             }
 
+            AsyncTask httpConnectionTask = new HttpConnectionTask(TypeRequest.GetToken).execute(key, number);
+            String keyJson = httpConnectionTask.get().toString();
+
+            if (keyJson == null) {
+                ((TextView) findViewById(R.id.reaction)).setText("Введен неверный код");
+            } else {
+
+                JSONObject jsonObject = new JSONObject(keyJson);
+                String phone = jsonObject.get("phone").toString();
+                String accessToken = jsonObject.get("access_token").toString();
+                AsyncTask getName = new HttpConnectionTask(TypeRequest.GetName).execute(phone, accessToken);
+
+                String jsonNameString = getName.get().toString();
+                JSONObject jsonName = new JSONObject(jsonNameString);
+                String name = jsonName.get("name").toString();
+
+                if (name.equals("none")) {
+                    Intent intent = new Intent(this, SendNameActivity.class);
+                    intent.putExtra("json", keyJson);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(this, FindChatActivity.class);
+                    intent.putExtra("json", keyJson);
+                    intent.putExtra("name", name);
+                    startActivity(intent);
+                }
+
+            }
+        } catch (Exception e) {
+            ((TextView) findViewById(R.id.reaction)).setText("Произошла ошибка");
         }
     }
 }

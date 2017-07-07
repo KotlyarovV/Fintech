@@ -20,6 +20,12 @@ import list_worker.PeopleDatas;
 import list_worker.ListViewAdapter;
 import newtwork_working.HttpConnectionTask;
 import newtwork_working.TypeRequest;
+import okhttp3.OkHttpClient;
+import okhttp3.Response;
+import okhttp3.Request;
+import okhttp3.WebSocket;
+import okhttp3.WebSocketListener;
+import okio.ByteString;
 
 import static com.example.vitaly.fintech.R.id.parent;
 import static com.example.vitaly.fintech.R.styleable.View;
@@ -32,13 +38,50 @@ public class FindChatActivity extends AppCompatActivity implements SearchView.On
 
     String json ;
     String name;
-    FindChatActivity findChatActivity;
+    String phone;
+    String accessToken;
+    private OkHttpClient client;
 
     ListView list;
     ListViewAdapter adapter;
     SearchView editsearch;
     ArrayList<PeopleDatas> arraylist = new ArrayList<PeopleDatas>();
     ArrayList<String> names = new ArrayList<>();
+
+
+    private final class EchoWebSocketListener extends WebSocketListener {
+        private static final int NORMAL_CLOSURE_STATUS = 1000;
+
+        @Override
+        public void onMessage(WebSocket webSocket, String text) {
+            adapter.update(text);
+        }
+        @Override
+        public void onMessage(WebSocket webSocket, ByteString bytes) {
+            adapter.update(bytes.hex());
+        }
+        @Override
+        public void onClosing(WebSocket webSocket, int code, String reason) {
+            webSocket.close(NORMAL_CLOSURE_STATUS, null);
+        }
+        @Override
+        public void onFailure(WebSocket webSocket, Throwable t, Response response) {
+            try {
+
+            } catch (Exception e) {}
+        }
+    }
+
+
+    private void startSocket() {
+        Request request = new Request.Builder()
+                .addHeader("phone", phone)
+                .addHeader("access_token", accessToken)
+                .url("ws://188.120.244.56/sock").build();
+        EchoWebSocketListener listener = new EchoWebSocketListener();
+        WebSocket ws = client.newWebSocket(request, listener);
+      //  client.dispatcher().executorService().shutdown();
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,8 +95,8 @@ public class FindChatActivity extends AppCompatActivity implements SearchView.On
 
         try {
             JSONObject jsonObject = new JSONObject(json);
-            String phone = jsonObject.getString("phone");
-            String accessToken = jsonObject.getString("access_token");
+            phone = jsonObject.getString("phone");
+            accessToken = jsonObject.getString("access_token");
 
             AsyncTask getName = new HttpConnectionTask(TypeRequest.GetUsers).execute(phone, accessToken);
             String jsonString = getName.get().toString();
@@ -106,6 +149,8 @@ public class FindChatActivity extends AppCompatActivity implements SearchView.On
             }
         });
 
+        client = new OkHttpClient();
+        startSocket();
     }
 
 

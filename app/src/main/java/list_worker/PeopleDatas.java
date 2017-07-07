@@ -38,4 +38,14 @@ public class PeopleDatas {
     public String getPhone() {
         return phone;
     }
+
+    @Override
+    public int hashCode() {
+        return phone.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        return object.hashCode() == this.hashCode();Fi
+    }
 }
